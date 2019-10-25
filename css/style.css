@@ -1,0 +1,15 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgba(43, 98, 161, 0.582);
+}
+
+img{
+    width: 180px;
+}
