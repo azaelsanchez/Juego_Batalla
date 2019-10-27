@@ -7,9 +7,162 @@
 }
 
 body{
-    background-color: rgba(43, 98, 161, 0.582);
+    background-color: black;
 }
 
 img{
-    width: 180px;
+    width: 120px;
 }
+
+.header {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.header p {
+    color: aliceblue;
+    font-family: arial;
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+
+.interface{
+    padding: 5%;
+    width: 100%;
+    display: inline-flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+
+.interface a{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.interface img {
+    width: 160px;
+    
+}
+
+.img-avatar{
+    width: 160px !important; 
+    height: 160px !important;
+}
+
+.interface div {
+    width: 220px;
+    padding:  10px 10px 0 20px;
+    background-color: black;
+}
+
+.interface a:hover div {
+    background-color: black;
+}
+
+.interface h3 {
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #f8b700;
+    padding: 12px 0 4px;
+}
+
+.interface p {
+    font-family: arial;
+    font-size: 12px;
+    color: #d5c8af;
+    line-height: 20px;
+}
+
+.btn-prefight{
+    width: 100% !important;
+}
+
+.movimientos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movimientos a {
+    width: 33.33%;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 14px;
+    font-family: arial;
+    color: #1b1b1b;
+}
+
+.movimientos a:nth-of-type(1) {
+    background-color: #e64747;
+}
+.movimientos a:nth-of-type(2) {
+    background-color: #e6ce47;
+}
+.movimientos a:nth-of-type(3) {
+    background-color: #e6e647;
+}
+
+.movimientos a:hover{
+    opacity: 0.9;
+}
+
+.arena{
+    width: 100%;
+    height: 180px;
+    background-color: black;
+    background: black url("img/vs.jpg") no-repeat fixed center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:35vh ;
+    visibility: hidden;
+}
+.player2{
+    padding: 0;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+
+.player2 a{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+.player2 img {
+    margin-left: 10%;
+    width: 160px !important;
+    height: 160px !important;
+}
+
+.player2 div{
+    width: 220px;
+    padding:  0 10px 0 20px;
+    background-color: black;
+}
+
+.player2 a:hover div {
+    background-color: black;
+}
+
+.player2 h3 {
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #f8b700;
+    padding: 12px 0 4px;
+}
+
+.player2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #d5c8af;
+    line-height: 20px;
+}
+
