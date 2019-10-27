@@ -77,7 +77,7 @@ let juego = {
         ];
         player2 = playerArray[chooseRandomEnemy];
         
-        getHeader.innerHTML = '<p>Elige</p>'
+        getHeader.innerHTML = '<p><h1>Golpea</h1></p>'
         getMovimientos.innerHTML = '<br><a href="#" class="btn-prefight" onclick="juego.hit()"><center><h1>Ataca</h1></center></a>';
         getPlayer2.innerHTML = '<img src="img/' + player2.clase.toLowerCase() +  '.jpg" class="img-avatar-p2"><div><h3>' + player2.clase 
         + '</h3><p class="vida-player2">Vida: ' + player2.vida + '</p><p>Mana: ' + player2.mana + '</p><p>Fuerza: ' + player2.fuerza + '</p><p>Agilidad: ' 

@@ -1,4 +1,6 @@
-
+h1{
+    color: white;
+}
 
 *{
     margin: 0;
@@ -95,7 +97,7 @@ img{
     text-align: center;
     font-size: 14px;
     font-family: arial;
-    color: #1b1b1b;
+    color: black;
 }
 
 .movimientos a:nth-of-type(1) {
