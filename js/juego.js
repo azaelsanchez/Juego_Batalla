@@ -36,7 +36,7 @@ let juego = {
         }
         let getInterface = document.querySelector(".interface");
         getInterface.innerHTML = '<img src="img/' + p1clase.toLowerCase() +  '.jpg" class="img-avatar"><div><h3>' + p1clase 
-        + '</h3><p class=".vida-player1">Vida: ' + player1.vida + '</p><p>Mana: ' + player1.mana + '</p><p>Fuerza: ' + player1.fuerza + '</p><p>Agilidad: ' 
+        + '</h3><p class="vida-player1">Vida: ' + player1.vida + '</p><p>Mana: ' + player1.mana + '</p><p>Fuerza: ' + player1.fuerza + '</p><p>Agilidad: ' 
         + player1.agilidad + '</p><p>Velocidad: ' + player1.velocidad + '</p></div>';
     }, 
 
@@ -89,7 +89,7 @@ let juego = {
     hit: function(){
         let Player1Speed = player1.velocidad;
         let Player2Speed = player2.velocidad; 
-         // CAmbiar vida segun los golpes 
+         // Cambiar vida segun los golpes 
     let getPlayer1Vida = document.querySelector(".vida-player1");
     let getPlayer2Vida = document.querySelector(".vida-player2");
     // Iniciar los ataques
@@ -118,21 +118,21 @@ let juego = {
             getPlayer1Vida.innerHTML = 'Vida: '+ player1.vida;
 
         }
-     }
-
+      }
     }
+
     if (Player2Speed >= Player1Speed ){
         let player2AttackValues = player2.playerAttack();
         let totalDamage = player2AttackValues [0] * player2AttackValues [1];
         player1.vida = player1.vida - totalDamage;
-        alert("El Player 1 golpeo " +player2AttackValues [0] +" de daño "+ player2AttackValues [1] + " veces.");
+        alert("El Player 2 golpeo " +player2AttackValues [0] +" de daño "+ player2AttackValues [1] + " veces.");
         if (player1.vida <= 0){
             alert("Gano el player 2!!!");
             getPlayer2Vida.innerHTML = 'Vida: '+ player2.vida;
             getPlayer1Vida.innerHTML = 'Vida: 0';
 
         }else{
-            getPlayerVida.innerHTML = 'Vida: '+ player1.vida;
+            getPlayer1Vida.innerHTML = 'Vida: '+ player1.vida;
             let playerAttackValues = player1.playerAttack();
             let totalDamage = playerAttackValues [0] * playerAttackValues [1];
             player1.vida = player1.vida - totalDamage;
@@ -144,10 +144,8 @@ let juego = {
         }else{
             getPlayer2Vida.innerHTML = 'Vida: '+ player2.vida;
 
+        }
+      }
     }
-   }
   }
-}
-    
-
 }
