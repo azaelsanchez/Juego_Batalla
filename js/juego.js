@@ -7,31 +7,31 @@ let juego = {
     resetPlayer: function(p1clase) {
         switch (p1clase) {
             case "mago":
-                player1 = new Player (p1clase, 125,100, 175, 105, 75);
+                player1 = new Player (p1clase, 125,100, 75, 105, 75);
                 break;
             case "guerrero":
-                player1 = new Player(p1clase, 190,25, 250, 100, 55);
+                player1 = new Player(p1clase, 190,25, 100, 100, 55);
                 break;
             case "monje":
-                player1 = new Player(p1clase, 170,75, 190, 135, 100);
+                player1 = new Player(p1clase, 170,75, 75, 135, 100);
             break;
             case "ninja":
-                player1 = new Player(p1clase, 140,50, 140, 190, 150);
+                player1 = new Player(p1clase, 140,50, 100, 190, 150);
                 break;
             case "demonio":
-            player1 = new Player(p1clase, 190,75, 250, 100, 55);
+            player1 = new Player(p1clase, 190,75, 100, 100, 55);
             break;
             case "bruja":
-            player1 = new Player(p1clase, 125,100, 175, 105, 75);
+            player1 = new Player(p1clase, 125,100, 75, 105, 75);
             break;
             case "cazador":
-            player1 = new Player(p1clase, 170,75, 190, 135, 100);
+            player1 = new Player(p1clase, 170,75, 75, 135, 100);
             break;
             case "druida":
-            player1 = new Player(p1clase, 125,100, 175, 105, 75);
+            player1 = new Player(p1clase, 125,100, 75, 105, 75);
             break;
             case "picaro":
-            player1 = new Player(p1clase, 140,50, 140, 190, 150);
+            player1 = new Player(p1clase, 140,50, 100, 190, 150);
             break;
         }
         let getInterface = document.querySelector(".interface");
@@ -54,15 +54,15 @@ let juego = {
         let getMovimientos = document.querySelector(".movimientos");
         let getPlayer2 = document.querySelector(".player2");
     
-        let player21 = new Player("Mago", 125,100, 175, 105, 75);
-        let player22 = new Player("Guerrero", 190,25, 250, 100, 55);
-        let player23 = new Player("Monje", 170,75, 190, 135, 100);
-        let player24 = new Player("Ninja", 140,50, 140, 190, 150);
-        let player25 = new Player("Demonio", 190,75, 250, 100, 55);
-        let player26 = new Player("Bruja", 125,100, 175, 105, 75);
-        let player27 = new Player("Cazador", 170,75, 190, 135, 100);
-        let player28 = new Player("Druida", 125,100, 175, 105, 75);
-        let player29 = new Player("Picaro", 140,50, 140, 190, 150);
+        let player21 = new Player("Mago", 125,100, 75, 105, 75);
+        let player22 = new Player("Guerrero", 190,25, 100, 100, 55);
+        let player23 = new Player("Monje", 170,75, 75, 135, 100);
+        let player24 = new Player("Ninja", 140,50, 100, 190, 150);
+        let player25 = new Player("Demonio", 190,75, 100, 100, 55);
+        let player26 = new Player("Bruja", 125,100, 75, 105, 75);
+        let player27 = new Player("Cazador", 170,75, 75, 135, 100);
+        let player28 = new Player("Druida", 125,100, 75, 105, 75);
+        let player29 = new Player("Picaro", 140,50, 100, 190, 150);
         let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(8));
         let playerArray = [
             player21,
